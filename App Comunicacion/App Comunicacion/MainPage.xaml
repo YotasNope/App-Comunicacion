@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:Custom="clr-namespace:App_Comunicacion.Custom"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_Comunicacion.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Menú" ></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Image Source="Fondo1.png" Aspect="AspectFill"></Image>
+        <StackLayout Orientation="Vertical" VerticalOptions="Start">
+            <Custom:SimpleEntry Text="Asamblea Virtual" FontSize="Body" TextColor="Black" BackgroundColor="White" Margin="45,65,45,50" Clicked="Button_Clicked"></Custom:SimpleEntry>
+            <Custom:SimpleEntry Text="Intinerario Universitario" FontFamily="GinW00-Regular" TextColor="Black" BackgroundColor="White"  Margin="45,40,45,50" Clicked="Button_Clicked_1" ></Custom:SimpleEntry>
+            <Custom:SimpleEntry Text="Ubicate en la Sanbuena" FontFamily="GinW00-Regular" FontSize="Body" TextColor="Black" BackgroundColor="White"  Margin="45,40,45,50" Clicked="Button_Clicked_2"></Custom:SimpleEntry>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>

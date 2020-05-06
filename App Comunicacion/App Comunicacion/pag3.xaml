@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+            
+             x:Class="App_Comunicacion.pag3">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ubicate en la SanBuena"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Image Source="Fondo1.png" Aspect="AspectFill"></Image>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="12">
+            <Maps:Map WidthRequest="500" HeightRequest="200" x:Name="MyMap" MapType="Street"/>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
